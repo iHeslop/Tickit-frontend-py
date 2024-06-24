@@ -45,12 +45,6 @@ Frontend:
 - All errors must be handled and passed on properly back to the user (toast notifications are a good way of doing this)
 - Must look polished, there is an example image attached to this spec and there are hundreds of examples of good looking todo apps online
 
-Backend:
-
-- All endpoints must be error handled such that they return the correct status codes and messages.
-- Implement a logging strategy for requests being processed (there are loads of recourse you can find via google to do this)
-  - Log4j
-- Use swagger to generate documentation for your API
 
 ---
 

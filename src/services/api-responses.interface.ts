@@ -4,5 +4,5 @@ export interface ToDoEntryResponse {
   updatedAt: string;
   content: string;
   title: string;
-  completed: boolean;
+  completed: number;
 }

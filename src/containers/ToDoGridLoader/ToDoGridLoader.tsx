@@ -57,14 +57,14 @@ const ToDoGridLoader = () => {
   };
 
   const filteredEntries = showCompleted
-    ? entries.filter((entry) => entry.completed)
-    : entries.filter((entry) => !entry.completed);
-
+    ? entries.filter((entry) => entry.completed == 1)
+    : entries.filter((entry) => entry.completed == 0);
+    
   const handleSwitchView = () => {
     setShowCompleted(!showCompleted);
   };
 
-  const handleStatusChange = (id: number, completed: boolean) => {
+  const handleStatusChange = (id: number, completed: number) => {
     setEntries((prevEntries) =>
       prevEntries.map((entry) =>
         entry.id === id ? { ...entry, completed } : entry

@@ -17,7 +17,7 @@ interface ToDoEntryCardProps {
   toDoEntry: ToDoEntryResponse;
   onDelete: (id: number) => void;
   onSubmit: (id: number, data: any) => void;
-  onStatusChange: (id: number, completed: boolean) => void;
+  onStatusChange: (id: number, completed: number) => void;
 }
 
 const ToDoCard = ({
@@ -27,7 +27,7 @@ const ToDoCard = ({
   onStatusChange,
 }: ToDoEntryCardProps) => {
   const [isEditing, setIsEditing] = useState(false);
-  const [isTicked, setIsTicked] = useState(toDoEntry.completed);
+  const [isTicked, setIsTicked] = useState(toDoEntry.completed === 1);
   const { handleSubmit, register } = useForm({ resolver: zodResolver(schema) });
 
   const handleDelete = () => {
@@ -55,7 +55,7 @@ const ToDoCard = ({
         });
         toast.info("Entry Updated");
         setIsTicked(!isTicked);
-        onStatusChange(toDoEntry.id, !isTicked);
+        onStatusChange(toDoEntry.id, isTicked ? 0 : 1);
       } catch (error) {
         toast.error("Failed to update Entry");
         console.error("Failed to update entry:", error);
