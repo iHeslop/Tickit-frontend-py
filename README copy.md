@@ -1,4 +1,4 @@
-# TickIt - Frontend - Python/Flask Compatible Version
+# TickIt - Frontend
 
 ## Demo & Snippets
 
@@ -22,12 +22,12 @@
 
 ## Description / Requirements
 
-TickIt is a fully functional to-do list application, with the ability to create, update and delete to-do entries, as well as the ability to "tickit" off and mark the task as completed. The application was built using a React TypeScript frontend, with a Python Flask backend and a MySQL database. 
+TickIt is a fully functional to-do list application, with the ability to create, update and delete to-do entries, as well as the ability to "tickit" off and mark the task as completed. The application was built using a React TypeScript frontend, with a Java SpringBoot backend and a MySQL database. 
 
 With this project, the plan was to practice and implement how to:
 
 - Create and implement all parts of a functional fullstack application. 
-- Use Flask to act as a backend between a MySQL database and a React TypeScript frontend.
+- Use SpringBoot to act as a backend between a MySQL database and a React TypeScript frontend.
 - Use React TypeScript as a frontend framework.
 - Handle errors in both the front and backends correctly and efficiently.
 - Perform CRUD operations in a fullstack format.
@@ -36,7 +36,7 @@ With this project, the plan was to practice and implement how to:
 
 Project Requirements:
 
-Create a backend with Flask that can create, update, read and delete todos from a MySQL database. Along with this create a frontend application with React that interacts with this backend.
+Create a backend with Spring that can create, update, read and delete todos from a MySQL database. Along with this create a frontend application with React that interacts with this backend.
 
 Frontend:
 
@@ -50,7 +50,7 @@ Backend:
 - All endpoints must be error handled such that they return the correct status codes and messages.
 - Implement a logging strategy for requests being processed (there are loads of recourse you can find via google to do this)
   - Log4j
-- Use swagger to generate documentation for your API
+- Use spring swagger to generate documentation for your API
 
 ---
 
@@ -67,7 +67,7 @@ npm run dev
 ```
 
 **Note:** To use this application correctly, you must have the backend and database setup and running correctly. 
-The link to the backend repository: https://github.com/iHeslop/TickIt-backend-py
+The link to the backend repository: https://github.com/iHeslop/TickIt-backend
 
 ---
 
@@ -126,6 +126,6 @@ The link to the backend repository: https://github.com/iHeslop/TickIt-backend-py
 
 ## More Information
 
-- This project is paired with the backend repository: https://github.com/iHeslop/TickIt-backend-py
+- This project is paired with the backend repository: https://github.com/iHeslop/TickIt-backend
 
 ---
