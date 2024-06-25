@@ -12,6 +12,7 @@ const ToDoForm = ({ onSubmit }: ToDoFormProps) => {
     resolver: zodResolver(schema),
   });
   const handleFormSubmit = (data: ToDoFormData) => {
+    console.log(data)
     onSubmit(data);
     toast.success("Entry added");
     reset();

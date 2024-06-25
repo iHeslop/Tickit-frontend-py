@@ -7,11 +7,11 @@ import { EntriesContext } from "../../context/EntriesContextProvider";
 import ToDo from "../../assets/todo.png";
 import { toast } from "react-toastify";
 
-const NewToDoPage = () => {
+const NewToDoLoader = () => {
   const { entries, setEntries } = useContext(EntriesContext);
 
-  const onSubmit = (data: unknown) => {
-    createToDoEntry(data as ToDoFormData)
+  const onSubmit = (data: ToDoFormData) => {
+    createToDoEntry(data)
       .then((data) => {
         console.log("ToDo Entry Created", data);
         setEntries([...entries, data]);
@@ -34,4 +34,4 @@ const NewToDoPage = () => {
   );
 };
 
-export default NewToDoPage;
+export default NewToDoLoader;

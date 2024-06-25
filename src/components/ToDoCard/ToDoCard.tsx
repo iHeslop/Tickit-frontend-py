@@ -51,7 +51,7 @@ const ToDoCard = ({
         await updateToDoEntryById(toDoEntry.id, {
           title: toDoEntry.title,
           content: toDoEntry.content,
-          completed: !isTicked,
+          completed: isTicked ? 0 : 1,
         });
         toast.info("Entry Updated");
         setIsTicked(!isTicked);
