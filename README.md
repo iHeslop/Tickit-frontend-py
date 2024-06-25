@@ -31,8 +31,6 @@ With this project, the plan was to practice and implement how to:
 - Use React TypeScript as a frontend framework.
 - Handle errors in both the front and backends correctly and efficiently.
 - Perform CRUD operations in a fullstack format.
-- Integrate React-Testing Library to test the frontend functionality. 
-- Integrate Swagger-UI and Log4j into the backend, for better developer and user experience, as well as accurate and useful documentation. 
 
 Project Requirements:
 
